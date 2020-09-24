@@ -9,7 +9,7 @@ class YAMLEditorController {
   dynamic obj;
   Map<String, YAMLOptionType> optionsTypes;
 
-  YAMLEditorController(String source, {this.optionsTypes}) {
+  YAMLEditorController(String source, {this.optionsTypes = const {}}) {
     this.obj = transformToDartObject(loadYaml(source));
   }
 
